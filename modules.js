@@ -1,1 +1,2 @@
-const xyz =  require('./people');
+const xyz =  require('./people'); //this links to js files 
+
