@@ -38,8 +38,8 @@ fs.mkdir('./assets', (err) => {
       console.log(err);
    }
    console.log('folder created');
-}});
-
+});
+}
 
 
 
