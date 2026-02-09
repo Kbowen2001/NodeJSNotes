@@ -1,5 +1,6 @@
     //The File System: You can interact with your file system through the command prompts
     //the 'fs' stands for file system.
+    //These methods work well for reading smaller js files, if reading from or writing to larger files you want to use streams.
 
 const fs =  require('fs'); 
 
@@ -62,3 +63,5 @@ if(fs.existsSync('./docs/deleteme.txt')) {
         console.log('file deleted');
  })
 }
+
+                            //Streams:
