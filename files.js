@@ -10,8 +10,12 @@ fs.readFile('./docs/blog1.txt', (err, data) => {
       console.log(err);
    }
    // console.log(data); //this is the buffer data
-    console.log(data.toString()); // this will convert the buffer data to a string and log it to the console.
+console.log(data.toString()); 
+    // this will convert the buffer data to a string and log it to the        console.
 }); 
+
+console.log('last line'); 
+    // this will log before the file is read because the readFile function is asynchronous. This means that the code will continue to run while the file is being read, and the callback function will be called once the file is read.
 
     //Writing files:
 
