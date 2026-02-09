@@ -29,6 +29,9 @@ fs.writeFile('./docs/blog1.txt', 'Hello World', () => {
 //   });
 
                                 //Directories:
+  
+if(!fs.existsSync('./assets')){ 
+    // this will check if the directory already exists before trying to create it. If it does exist, it will not try to create it again and will not throw an error.
     // to create a directory, you can use the fs.mkdir() method like this: 'mkdir' stands for make directory. 'assets' is the name of the directory to create. 
 fs.mkdir('./assets', (err) => {
    if(err){
