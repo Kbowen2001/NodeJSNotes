@@ -15,7 +15,7 @@ readStream.on('data', (chunk) => {
 
     //can also add {encoding: 'utf8'} to the createReadStream method to avoid having to use the toString() method on the chunk parameter. This will automatically convert the buffer data to a string before it is passed to the callback function. Example: const readStream = fs.createReadStream('./docs/blog3.txt', {encoding: 'utf8'}); Then you can just log the chunk parameter without using toString() like this: console.log(chunk);
 
-
+ 
 
                                 //Write Streams:
 
