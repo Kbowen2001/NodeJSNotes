@@ -14,3 +14,5 @@ const int = setInterval(() => {
     console.log('in the interval');
 }, 1000);
 
+console.long(__dirname); // gives you the directory name of the current module//
+console.long(__filename); // gives you the file name of the current module//
