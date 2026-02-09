@@ -64,4 +64,5 @@ if(fs.existsSync('./docs/deleteme.txt')) {
  })
 }
 
-                            //Streams:
+                            //Streams: (start using data before it has finished loading)
+
