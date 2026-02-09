@@ -24,10 +24,22 @@ fs.writeFile('./docs/blog1.txt', 'Hello World', () => {
 
 // if the file does not exist, it will be created. If the file does exist, it will be overwritten. To append to a file instead of overwriting it, you can use the fs.appendFile() method like this:
 
-fs.appendFile('./docs/blog1.txt', '\nHello Again', () => {
-    console.log('file was appended');
+//   fs.appendFile('./docs/blog1.txt', '\nHello Again', () => {
+//    console.log('file was appended');
+//   });
+
+                                //Directories:
+    // to create a directory, you can use the fs.mkdir() method like this: 'mkdir' stands for make directory. 'assets' is the name of the directory to create. 
+fs.mkdir('./assets', (err) => {
+   if(err){
+      console.log(err);
+   }
+   console.log('folder created');
 });
 
-    //Directories:
+
+
+
+
 
     //Deleting Files:
