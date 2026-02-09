@@ -8,4 +8,18 @@ Node.js is a program written in c++ (means it can run directly in the computer a
     -Connect to a database
     -Act as a server for content 
 
-//TO OPEN TERMINAL TO RUN JS WITHOUT BROWSER//: next to run> click terminal> new terminal // type node test
+//TO OPEN TERMINAL TO RUN JS WITHOUT BROWSER//: next to run> click terminal> new terminal // type node test//
+
+The Global Object:
+         object that acts as the top-level namespace for JavaScript runtime environment. In a browser the global object would be the window (if you inspect element on a browser you will see and type 'Window' at the top youll see a bunch of different properties/methods available to that 'Window' object. In node the global object is 'Global'
+         
+In this case 'Window' is the broswers global object)
+    -A global object's presence is implied when writing code
+        Example: 
+            setTimeout(() => {
+                alert('Hello')
+            }, 3000)
+         INSTEAD OF:
+            window.setTimeout(() => {
+                alert('Hello')
+            }, 3000)
