@@ -4,15 +4,16 @@
 
 
 //this function runs once after 3 seconds//
-setTimeout(() => {
-    console.log('in the timeout');
-    clearInterval(int); // will run every second until hits 3 seconds//
-}, 3000);
+      setTimeout(() => {
+         console.log('in the timeout');
+           clearInterval(int); // will run every second until hits 3 seconds//
+        }, 3000);
 
 //this funciton runs every 1 second//
-const int = setInterval(() => {
-    console.log('in the interval');
-}, 1000);
 
-console.long(__dirname); // gives you the directory name of the current module//
-console.long(__filename); // gives you the file name of the current module//
+        const int = setInterval(() => {
+            console.log('in the interval');
+        }, 1000);
+
+ console.long(__dirname); // gives you the directory name of the current project//
+ console.long(__filename); // gives you the file name of the current module//

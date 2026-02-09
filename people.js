@@ -1,0 +1,1 @@
+const people = ['mario', 'luigi', 'yoshi', 'toad'];
