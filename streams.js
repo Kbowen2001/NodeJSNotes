@@ -22,3 +22,9 @@ readStream.on('data', (chunk) => {
 const writeStream = fs.createWriteStream('./docs/blog4.txt');      // this creates a writable stream to the file blog4.txt in the docs directory. If the file does not exist, it will be created. If the file does exist, it will be overwritten.
 
 writeStream.write('Hello World\n'); // this writes the string 'Hello World' to the file. The \n at the end adds a new line after the string. 
+
+
+
+                                //Piping:
+readStream.pipe(writeStream);
+    // this pipes the data from the readStream to the writeStream. This means that as data is read from the file, it will be written to the new file. This is a more efficient way to copy data from one file to another because it does not require you to manually handle the data in chunks. The pipe() method will automatically handle the flow of data between the streams and will also handle any errors that may occur during the process.
