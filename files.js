@@ -40,7 +40,7 @@ fs.mkdir('./assets', (err) => {
    console.log('folder created');
 });
     //To delete a directory, you can use the fs.rmdir() method like this:
-    // 'rmdir' stands for remove directory. This will delete the directory and all of its contents. 
+    // 'rmdir' stands for remove directory. This will delete the directory and all of its contents. with both add and delete you can keep running it to create and delete file depending on if file exists or not.
 } else {
     fs.rmdir('./assets', (err) => {
        if(err) {
