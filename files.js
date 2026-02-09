@@ -51,7 +51,14 @@ fs.mkdir('./assets', (err) => {
 } 
 
 
+                                //Deleting Files:
 
-
-
-    //Deleting Files:
+    //''./docs/deleteme.txt' looks for the file named deleteme.txt in the docs directory. If it exists, it will be deleted. If it does not exist, it will throw an error. To avoid this error, you can check if the file exists before trying to delete it like this:
+if(fs.existsSync('./docs/deleteme.txt')) {
+    fs.unlink('./docs/deleteme.txt', (err) => {
+         if(err){
+            console.log(err)
+        }
+        console.log('file deleted');
+ })
+}
