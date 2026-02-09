@@ -9,8 +9,9 @@ fs.readFile('./docs/blog1.txt', (err, data) => {
    if(err){
       console.log(err);
    }
-   console.log(data); 
-});
+   // console.log(data); //this is the buffer data
+    console.log(data.toString()); // this will convert the buffer data to a string and log it to the console.
+}); 
 
     //Writing files:
 
