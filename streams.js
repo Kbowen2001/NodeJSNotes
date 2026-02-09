@@ -14,3 +14,11 @@ readStream.on('data', (chunk) => {
     // this listens for the 'data' event on the readStream. The callback function will be called every time a new chunk of data is available to read. The chunk parameter will contain the data that was read from the file. In this case, we are logging the chunk to the console along with a separator to indicate that it is a new chunk of data.
 
     //can also add {encoding: 'utf8'} to the createReadStream method to avoid having to use the toString() method on the chunk parameter. This will automatically convert the buffer data to a string before it is passed to the callback function. Example: const readStream = fs.createReadStream('./docs/blog3.txt', {encoding: 'utf8'}); Then you can just log the chunk parameter without using toString() like this: console.log(chunk);
+
+
+
+                                //Write Streams:
+
+const writeStream = fs.createWriteStream('./docs/blog4.txt');      // this creates a writable stream to the file blog4.txt in the docs directory. If the file does not exist, it will be created. If the file does exist, it will be overwritten.
+
+writeStream.write('Hello World\n'); // this writes the string 'Hello World' to the file. The \n at the end adds a new line after the string. 
