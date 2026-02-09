@@ -43,7 +43,11 @@ fs.mkdir('./assets', (err) => {
     // 'rmdir' stands for remove directory. This will delete the directory and all of its contents. 
 } else {
     fs.rmdir('./assets', (err) => {
-       if(err)} 
+       if(err) {
+            console.log(err);
+       }
+})
+} 
 
 
 
