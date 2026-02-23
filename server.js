@@ -16,12 +16,15 @@ const server = http.createServer((req, res) => {
     switch(req.url){
         case '/':
             path += 'index.html';
+            res.statusCode = 200; // this will set the status code of the response to 200, which means OK. 
             break;
         case '/about':
             path += 'about.html';
+            res.statusCode = 200; 
             break;
         default:
             path += '404.html';
+            res.statusCode = 404; // this will set the status code of the response to 404, which means Not Found.
             break;
     }   
 
