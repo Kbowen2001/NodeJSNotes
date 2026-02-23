@@ -16,7 +16,7 @@ const server = http.createServer((req, res) => {
             console.log(err);
             res.end(); 
         } else {
-            res.write(data); //  This is the body of the response that will be sent back to the client (will show in browser).
+        
             res.end(); // this will end the response and send it back to the client.
         }
     });
