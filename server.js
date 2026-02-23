@@ -10,6 +10,8 @@ const server = http.createServer((req, res) => {
     // set header content type
    res.setHeader('Content-Type', 'text/html'); // this will set the content type of the response to HTML. This is important because it tells the browser how to interpret the response. 
 
+
+   //routing 
     let path = './html storage/'; 
     switch(req.url){
         case '/':
