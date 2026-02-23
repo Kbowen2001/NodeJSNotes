@@ -31,7 +31,7 @@ const server = http.createServer((req, res) => {
             console.log(err);
             res.end(); 
         } else {
-        
+            res.write(data);
             res.end(); // this will end the response and send it back to the client.
         }
     });
