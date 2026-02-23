@@ -5,6 +5,13 @@ const http = require('http'); // this is the built in module for creating a serv
 const server = http.createServer((req, res) => {
     console.log(req.url, req.method);
 
+
+    // set header content type
+    res.setHeader('Content-Type', 'text/html'); // this will set the content type of the response to HTML. This is important because it tells the browser how to interpret the response. 
+
+    res.write('<p>Sup</p> '); // this will write the string 'Sup ' to the response. This is the body of the response that will be sent back to the client (will show in browser).
+    res.write('This is showing I can add another line to the response if needed');
+    res.end(); // this will end the response and send it back to the client.
 });
    // console.log(req); // this will log the request object, which contains information about the request that was made to the server. It includes properties such as the URL, method, headers, and more. This can be useful for debugging and understanding how the server is handling requests.   
    
